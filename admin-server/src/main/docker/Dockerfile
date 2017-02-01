@@ -1,6 +1,6 @@
-FROM java:7
+FROM java:8
 VOLUME /tmp
-ADD target/spring-boot-admin-sample-eureka.jar /app.jar
+ADD target/admin-server.jar /app.jar
 RUN bash -c 'touch /app.jar'
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]

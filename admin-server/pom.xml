@@ -78,7 +78,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>de.codecentric.boot.admin.SpringBootAdminApplication</mainClass>
+					<mainClass>ru.home.spring.boot.admin.SpringBootAdminApplication</mainClass>
 					<addResources>false</addResources>
 				</configuration>
 			</plugin>
