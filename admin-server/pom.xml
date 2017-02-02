@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
 
     <name>admin-server</name>
-    <description>Eureka Discovery Server</description>
+    <description>Spring boot admin with Eureka Discovery</description>
 
     <dependencies>
         <dependency>
@@ -25,7 +25,7 @@
         <!-- tag::dependency-eureka[] -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <!-- end::dependency-eureka[] -->
 
