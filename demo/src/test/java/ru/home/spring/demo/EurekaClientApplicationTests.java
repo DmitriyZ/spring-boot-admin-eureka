@@ -51,10 +51,10 @@ public class EurekaClientApplicationTests {
         // registration has to take place...
         Thread.sleep(3000);
 
-        ResponseEntity<String> response = this.testRestTemplate.getForEntity("http://localhost:" + this.port + "/service-instances/a-bootiful-client", String.class);
+        ResponseEntity<String> response = this.testRestTemplate.getForEntity("http://localhost:" + this.port + "/service-instances/demo%20app", String.class);
 
         then(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        then(response.getBody()).contains("a-bootiful-client");
+        then(response.getBody()).contains("demo%20app");
     }
 
     @Configuration
